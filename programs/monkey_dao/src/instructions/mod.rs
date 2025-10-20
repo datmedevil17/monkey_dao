@@ -15,7 +15,6 @@ pub mod update_reputation;
 pub mod mint_badge;
 pub mod register_merchant;
 pub mod verify_redemption;
-pub mod getters;
 
 pub use list_deal::*;
 pub use buy_deal::*;
