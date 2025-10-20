@@ -1,4 +1,3 @@
-
 // PDA Seeds
 pub const DEAL_SEED: &[u8] = b"deal";
 pub const USER_PROFILE_SEED: &[u8] = b"user_profile";
@@ -17,8 +16,16 @@ pub const MONK_TOKEN_SYMBOL: &str = "MONK";
 // Reward Constants
 pub const REDEMPTION_REWARD: u64 = 100_000_000; // 0.1 MONK per redemption
 pub const STAKING_REWARD_PER_DAY: u64 = 10_000_000; // 0.01 MONK per day
+pub const BASE_REWARD_PER_NFT_PER_SECOND: u64 = 115; // Base reward per NFT per second (approximately 0.01 MONK per day)
 pub const LISTING_REWARD: u64 = 50_000_000; // 0.05 MONK for listing
 pub const POOL_PARTICIPATION_REWARD: u64 = 20_000_000; // 0.02 MONK for pool participation
+
+// Badge Reward Multipliers (percentage)
+pub const BRONZE_REWARD_MULTIPLIER: u32 = 110; // 1.1x multiplier
+pub const SILVER_REWARD_MULTIPLIER: u32 = 125; // 1.25x multiplier
+pub const GOLD_REWARD_MULTIPLIER: u32 = 150; // 1.5x multiplier
+pub const PLATINUM_REWARD_MULTIPLIER: u32 = 200; // 2.0x multiplier
+pub const DIAMOND_REWARD_MULTIPLIER: u32 = 300; // 3.0x multiplier
 
 // Reputation Points
 pub const POINTS_LIST_DEAL: u64 = 10;

@@ -58,6 +58,7 @@ pub fn execute_pool_purchase(ctx: Context<ExecutePoolPurchase>) -> Result<()> {
 
 
     // Transfer pooled funds to deal owner
+    let escrow_lamports = ctx.accounts.pool_escrow.lamports();
     **ctx.accounts.pool_escrow.try_borrow_mut_lamports()? = escrow_lamports
         .checked_sub(pool.current_amount)
         .ok_or(DealError::ArithmeticUnderflow)?;
